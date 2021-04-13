@@ -1,0 +1,7 @@
+POST http://localhost:5000/api/todo 
+content-type: application/json
+
+{
+  "text" : "TEST 22:33"
+}
+
