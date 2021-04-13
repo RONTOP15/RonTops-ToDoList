@@ -8,7 +8,7 @@ export const Todo = ({ todo, todos, setTodos }) => {
   
 
   const completeHandler = () => {
-    fetch("http://localhost:5000/api/todo/" + todo._id, {
+    fetch("'/api/todo'" + todo._id, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -36,7 +36,7 @@ export const Todo = ({ todo, todos, setTodos }) => {
   };
 
   const trashHandler = () => {
-    fetch("http://localhost:5000/api/todo/" + todo._id, {
+    fetch('/api/todo' + todo._id, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

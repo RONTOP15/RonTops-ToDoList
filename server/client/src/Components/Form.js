@@ -15,7 +15,7 @@ const Form = ({ setInputText, inputText, todos, setTodos }) => {
       return null;
     }
 
-    fetch("http://localhost:5000/api/todo/", {
+    fetch('/api/todo', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

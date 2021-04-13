@@ -11,7 +11,7 @@ function App() {
 
   useEffect( () => {
     const getDataFromServer = async () => {
-       fetch('http://localhost:5000/api/todo',{
+       fetch('/api/todo',{
         method : 'GET',
         headers: {
           "Content-Type": "application/json",
